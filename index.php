@@ -8,8 +8,8 @@ $app->initLayout('Centered');
 
 $form = $app->layout->add('Form');
 $rofl = new \atk4\data\Model(new \atk4\data\Persistence_Array($a));
-$rofl->addField('KATET1',['required']);
-$rofl->addField('KATET2',['required']);
+$rofl->addField('KATET1',['required'=>true]);
+$rofl->addField('KATET2',['required'=>true]);
 $form->setModel($rofl);
 
 
